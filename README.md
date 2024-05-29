@@ -4,8 +4,18 @@ Realtime Access Log Analyzer
 Based on docker, python, redis.
 
 Main goal:
-To analyze access log as quick as possible and run action if something wrong was identified (eg. ban ip in firewall).
+ * To analyze access log as quick as possible and run action if something wrong was identified (eg. ban ip in firewall).
 
+Implemented:
+ * haproxy log defaults
+   
+ToDo:
+ * apache log defaults
+ * nginx log defaults
+ * customize log parser
+ * remote input (rsyslog)
+
+ 
 First code release planned to 1.6.2024
 
 
