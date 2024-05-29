@@ -1,16 +1,16 @@
 # rala
-Realtime Access Log Analyzer
+**Realtime Access Log Analyzer**
 
-Based on docker, python, redis.
+*Based on docker, python, redis.*
 
-Main goal:
+## Main goal:
  * To analyze access log as quick as possible and run action if something wrong was identified (eg. ban ip in firewall).
  * Create first/second line of defense against bad bots, ddos ​​app attacks and others
    
-Implemented:
+### Implemented:
  * haproxy log defaults
    
-ToDo:
+### ToDo:
  * apache log defaults
  * nginx log defaults
  * customize log parser
