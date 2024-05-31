@@ -16,6 +16,11 @@
  * customize log parser
  * remote input (rsyslog)
 
+## How it works:
+ * writes lines from log to redis to ipv4 and ipv6 keys
+ * counts ipv4 and ipv6 arrays and give ip above threshold as output
+ * runs actions on output values
+
 ## Howto:
  * edit .env according your needs
  * edit docker-compose.yml and mount your log file
