@@ -25,7 +25,7 @@
  * edit .env according your needs
  * edit docker-compose.yml and mount your log file
  * optionaly uncomment mail functions in analyzer python
- * cmd variables in env works as CMD1 + <OUTPUT VALUE> + CMD2
+ * cmd variables in env works as CMD1 + \<OUTPUT VALUE\> + CMD2
  
 First code release planned to 1.6.2024
 
