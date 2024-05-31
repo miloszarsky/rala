@@ -1,0 +1,37 @@
+---
+networks:
+  local:
+    external: true
+    driver: bridge
+services:
+  rala-log_saver:
+    build: ./log_saver/
+    #image: rala-log_saver:latest
+    container_name: rala-log_saver
+    volumes:
+      - ./file.log:/file.log
+    networks:
+      - local
+    restart: unless-stopped
+    env_file:
+      - .env
+  rala-log_analyzer:
+    build: ./log_analyzer/
+    #image: rala-log_analyzer:latest
+    container_name: rala-log_analyzer
+    networks:
+      - local
+    restart: unless-stopped
+    env_file:
+      - .env
+  rala-redis:
+    image: redis:alpine
+    container_name: rala-redis
+    command: redis-server --save "" --loglevel warning
+    volumes:
+      - ./redis:/data
+    networks:
+      - local
+    restart: unless-stopped
+    environment:
+      - TZ=Europe/Prague

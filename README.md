@@ -16,6 +16,10 @@
  * customize log parser
  * remote input (rsyslog)
 
+## Howto:
+ * edit .env according your needs
+ * edit docker-compose.yml and mount your log file
+ * optionaly uncomment mail functions in analyzer python
  
 First code release planned to 1.6.2024
 
